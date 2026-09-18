@@ -9,3 +9,6 @@ Proyecto incremental de la asignatura Desarrollo FullStack II.
 
 ## Ejecución
 Abrir `index.html` en el navegador o utilizar Live Server.
+
+## Integrante
+Sebastian Rojo.
