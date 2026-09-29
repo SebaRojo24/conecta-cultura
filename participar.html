@@ -13,10 +13,12 @@
     <a class="marca" href="index.html">Conecta Cultura</a>
     <nav aria-label="Navegación principal">
       <ul class="menu">
-        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="index.html">Inicio</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="noticias.html">Noticias</a></li>
         <li><a href="agenda.html">Agenda</a></li>
+        <li><a href="participar.html" aria-current="page">Participar</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
       </ul>
     </nav>
   </header>
@@ -43,7 +45,9 @@
       <label for="telefono">Teléfono chileno</label>
       <input id="telefono" name="telefono" type="tel"
              autocomplete="tel" placeholder="912345678"
-             pattern="[0-9]{9}" title="Ingresa 9 dígitos" required>
+             pattern="[0-9]{9}" title="Ingresa 9 dígitos" required
+             aria-describedby="ayuda-telefono">
+      <p id="ayuda-telefono" class="texto-ayuda">Ingresa 9 dígitos numéricos sin prefijo +56 (ejemplo: 912345678).</p>
     </fieldset>
 
     <fieldset>
@@ -55,6 +59,7 @@
         <option value="fotografia">Fotografía urbana</option>
         <option value="huerto">Huerto comunitario</option>
         <option value="programacion">Programación creativa</option>
+        <option value="guitarra">Taller de guitarra</option>
       </select>
 
       <p>Modalidad preferida</p>
@@ -66,6 +71,9 @@
       <label for="motivacion">¿Por qué quieres participar?</label>
       <textarea id="motivacion" name="motivacion"
                 rows="5" minlength="20" maxlength="500" required></textarea>
+
+      <label for="fecha-disponibilidad">Fecha de preferencia (opcional)</label>
+      <input id="fecha-disponibilidad" name="fecha_disponibilidad" type="date">
     </fieldset>
 
     <label>
